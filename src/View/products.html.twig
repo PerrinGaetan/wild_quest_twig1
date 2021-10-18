@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonjour</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<h1>Mes instruments : </h1>
+<ul>
+{%for instrument in products%}
+<li>{{instrument}}</li>
+{% endfor %}
+</ul>
+{{dump(products)}}
+<body>
+</body>
+</html>
